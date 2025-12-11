@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Lucro Liberô!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              libero: {
+                dark: '#121212',
+                card: '#1e1e1e',
+                input: '#2a2a2a',
+                primary: '#27ae60',
+                light: '#2ecc71',
+                gold: '#FFD700'
+              }
+            },
+            fontFamily: {
+              sans: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+<body class="bg-libero-dark text-white min-h-screen flex items-center justify-center antialiased selection:bg-libero-primary selection:text-white">
+    <div id="root" class="w-full flex justify-center p-4"></div>
+</body>
+</html>
